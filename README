@@ -1,0 +1,72 @@
+command to compile using linux terminal :
+
+image_processing part :
+
+$cd image_processing/
+$make main //to compile
+$./main char[] filename double double double double  
+1  char *filename
+2 int increase brightness
+3 int increase contrast
+4 int coefficient to blur (0 if none)
+5 int angle to rotate
+
+press the down arrow to quit, or the red cross if it exists (ubuntu/Archlinux)
+
+Detection_part:
+
+$cd Detection
+$make
+$./main
+$clean
+
+
+To train the neural network:
+
+(there is 2 folders in "Detection", in it "ImageTreatment" is a more completed one but there are errors when compiling, the other one "EarlyDetect" can compile but only have RSLA) 
+To try the image treatment:
+$cd Detection/EarlyDetect
+$make
+
+$cd training_NN/
+$make
+$./training
+
+To test the neural network:
+
+$cd test_NN/
+$make
+$./test
+
+
+To test sudoku-solver  :
+$cd sudoku-solver-c
+$make
+$./main grid00
+
+the solution is saved in a new file with .result format
+
+
+
+
+To load the graphical user interface :
+$cd gui
+$make
+$./main_application
+$make clean 
+The solutions are  saved  in a txt file (solution 1 , solution 2 ...)
+
+To use  the graphical user interface :
+
+1-Upload button : Upload a file to the gui 
+
+2-Convert : convert the image into a sudoku  grid 
+
+3-Execute : solve the sudoku grid 
+
+4- Clear : Reset the value of the grid to 0
+
+5-Save : save the solution in a txt file 
+
+
+
